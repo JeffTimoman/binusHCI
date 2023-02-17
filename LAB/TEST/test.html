@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Random</title>
+</head>
+<body>
+    <h1 id="temp" class="bd-1px text-center">1</h1>
+    <div class="text-center">
+        
+        <button id="test" >Plus 1</button>
+        <button id="test2">Plus 10</button>
+        <button id="test3">Plus 100</button>
+        <button id="test4">Plus 1000</button>
+    </div>
+    <script>
+        var counter = 1;
+        var test = document.getElementById("test");
+        test.addEventListener("click", function(){
+            counter++;
+            document.querySelector("h1").innerHTML = counter;
+        });
+
+        var test2 = document.getElementById("test2");
+        test2.addEventListener("click", function(){
+            counter += 10;
+            document.querySelector("h1").innerHTML = counter;
+        });
+
+        var test3 = document.getElementById("test3");
+        test3.addEventListener("click", function(){
+            counter += 100;
+            document.querySelector("h1").innerHTML = counter;
+        });
+
+        var test4 = document.getElementById("test4");
+        test4.addEventListener("click", function(){
+            counter += 1000;
+            document.querySelector("h1").innerHTML = counter;   
+        })
+    </script>
+</body>
+</html>

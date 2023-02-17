@@ -1,0 +1,228 @@
+:root{
+    --primary: #F6F6F2;
+    --secondary: #388087;
+    --acc1: #BADFE7;
+    --acc2: #6FB3B8;
+    --acc3: #C2EDCE;
+    --tr: transparent;
+
+    --pad: 6rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    list-style: none;
+
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    position: relative;
+    background-color: var(--primary);
+
+    overflow-x: hidden;
+}
+
+.nav-container{
+    position: fixed;
+    
+    width: 100%;
+    padding: 1rem var(--pad);
+    background-color: var(--secondary);
+    color: var(--primary);
+    backdrop-filter: blur(10px);
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+}
+
+nav a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.container-jumbotron{
+
+    padding: 0 var(--pad);
+
+    background-image: url('./assets/background.png');
+    background-repeat: repeat;
+    background-position: center;
+    height: 100vh;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--secondary);
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jumbotron{
+    padding: 4rem;
+    margin-top: -2rem;
+}
+
+.container-jumbotron h1{
+    font-size: 4rem;
+}
+
+.container-content{
+    padding: 10rem var(--pad);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+
+    color: var(--secondary);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    margin-bottom: 100rem;
+}
+
+.content{
+    display: flex;
+
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.item-container{
+
+    font-size: 1.5rem;
+
+    display: flex;
+
+    gap: 2rem;
+
+    flex-wrap: wrap;
+}
+
+.item-container p{
+    padding: .375rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--acc3);
+}
+ 
+.item-container div{
+    padding: .375rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--acc3);
+}
+
+.names{
+    align-items: end;
+}
+
+.names .item-container{
+    justify-content: end;
+}
+
+.cc-form input{
+    width: 32rem;
+    height: 2.5rem;
+    padding: .5rem .75rem;
+
+    border-radius: 8px;
+    border: 2px solid var(--secondary);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+.error{
+    width: 32rem;
+    height: 2.75rem;
+   
+    padding: .325rem .75rem;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+
+    color: red;
+    background-color: hsl(0, 80%, 80%);
+    border-radius: 8px;
+
+    display: none;
+}
+
+.success{
+    width: 32rem;
+    height: 2.75rem;
+   
+    padding: .325rem .75rem;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+
+    color: var(--secondary);
+    background-color: var(--acc1);
+    border-radius: 8px;
+
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+
+.date-item div{
+    width: 32rem;
+    height: 2.75rem;
+   
+    padding: .325rem .75rem;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+
+    color: var(--primary);
+    background-color: var(--acc2);
+    border-radius: 8px;
+
+}
+
+.math-item{
+    width: 32rem;
+
+    padding: .75rem .75rem;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+
+    color: var(--primary);
+    background-color: var(--acc2);
+    border-radius: 8px;
+}

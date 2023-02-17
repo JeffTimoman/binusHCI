@@ -1,0 +1,97 @@
+*{
+    margin : 0;
+    box-sizing: border-box;
+}
+
+#nav{
+    position: sticky;
+    top: 0;
+}
+
+
+#navBar{
+    display:flex;
+    padding: 20px;
+    /* margin: 20px; */
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+#navMenuButton{
+    display: none;
+}
+
+#navMenuItems{
+    display: flex;
+}
+
+@media screen and (max-width: 600px){
+    #navMenuItems{
+        position: absolute;
+        background-color: white;
+        display: block;
+        left: -100px;
+        transition: all .5s;
+    }
+
+    #navMenuButton{
+        display: block;
+    }
+
+    #navMenu:hover #navMenuItems{
+        display: block;
+        left: 0;
+    }
+
+}
+
+.jumbotron{
+
+}
+.jumbotron img{
+    width : 100%;
+}
+
+.jumbotron h1{
+    color:white;
+}
+#jumbotron1{
+    background-image: 
+        linear-gradient(#0000, #222a),
+        url("assets/onepiece.jpg");
+    background-size: cover;
+    background-position: center;
+    height : calc(300px + 20vw);
+    display : flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+}
+
+#contents{
+    display: grid;
+    width:100vw;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.card{
+    width: 100%;
+    padding: 10px;
+}
+
+.card img{
+    width: 100%;
+}
+
+@media screen and (max-width : 800px){
+    #contents{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width : 550px){
+    #contents{
+        grid-template-columns: auto;
+    }
+}
