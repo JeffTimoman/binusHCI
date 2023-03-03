@@ -1,11 +1,11 @@
 body{
     /* font-size: 12px; */
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     background-color: salmon;
+    overflow-x: hidden;
 }
 
-/* Navbar */
 .container{
     display: flex;
     flex-direction: column;
@@ -14,74 +14,21 @@ body{
     background-size: cover;
 }
 
+/* Navbar */
+
 #navBar{
     position: fixed;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     height: 4.3rem;
-    padding: .3em 0 .3em 0;
+    padding: .3em 0 .3rem 0;
     background: rgba(48, 47, 41, 0.6);
 }
 
-ul img{
-    margin-left : 2rem;
-    width: 10rem;
-    height: 4.3rem;
-    padding: 0;
-    margin-right: 3rem;
-}
-
-.navBarItem{
-    display: flex;
-}
-
-.navBarItem a{
-    display: flex;
-    align-items: center;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-}   
-
-.navBarItem > ul> li > a:hover{
-    border-top: rgb(105, 224, 255) solid 5px;
-    text-shadow : 0 0px 15px #0ff;
-    /* background-color: red; */
-}   
-
-#navBarReg > a:hover{
-    text-shadow : 0 0px 15px #0ff;
-    /* background-color: red; */
-}
-
-.navBarItem ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-}
-
-#navBarReg{
-    display: flex;
-    align-items: center;
-    padding : 0;
-    margin-right: 1.5rem;
-}
-
-#navBarReg a{
-    margin-right: 0;
-}
-
-#navBarReg img{
-    margin-left : .75rem;
-}
+/* Note Logo size : 10 rem 4.3rem*/
 
 /* End of Navbar */
 
@@ -126,6 +73,7 @@ ul img{
 
 .footerItem ul li:hover{
     color: white;
+    transition: color 0.3s ease-in-out;
 }
 
 .footerItem p{
@@ -147,4 +95,5 @@ ul img{
     height: 3.1rem;
     width: auto;
 }
+
 /* End of footer */

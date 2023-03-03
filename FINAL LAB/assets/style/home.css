@@ -1,0 +1,104 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+/* Jumbotron 1 */
+
+.jumbotron-1{
+    background-image: url(../img/home/jumbotron-1/home-jumbotron-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron-1-item h1{
+    padding-top: 60vh;
+    font-family: 'Podkova';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    text-shadow: -10px 6px 15px #000000;
+}
+
+.downloadNow{
+    height: 10vh;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    /* padding-top: 1rem; */
+}
+
+.downloadNow img{
+    opacity: 0.7;
+    padding: 0 1rem 0 1rem;
+}
+
+.downloadNow img:hover{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 680px){
+    .jumbotron-1-item h1{
+        padding-top: 5vh;
+        font-family: 'Podkova';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 20px;
+        text-shadow: -10px 6px 15px #000000;
+    }
+}
+
+
+/* Jumbotron 2 */
+.jumbotron-2{
+    background-image: url(../img/home/jumbotron2/wallpaper-blur-gradient.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    box-shadow: inset 0px 0px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    /* 400/700 */
+    /* 71 px 85 px */
+    font-weight: 400;
+    font-size: 7rem;
+    line-height: 85px;
+    /* identical to box height */
+
+
+    background: linear-gradient(180deg, #FFF4FB 0%, rgba(201, 201, 201, 0.756634) 77.4%, rgba(255, 179, 229, 0.595833) 99.99%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    text-emphasis-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0px 4px 4px #000000;
+}
