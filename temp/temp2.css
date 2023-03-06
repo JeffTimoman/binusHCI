@@ -1,0 +1,32 @@
+.container{
+    width : 40vw;
+    height : 80vh;
+    border: solid black 5px;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-areas:"header header" 
+                        "name logo"
+                        "text logo";
+    text-align: center;
+}
+
+.header{
+    background-color: yellow;
+    grid-area: header;
+
+}
+
+.name{
+    background-color: yellowgreen;
+    grid-area: name;
+}
+
+.text{
+    background-color: salmon;
+    grid-area: text;
+}
+
+.logo{
+    background-color: lightblue;
+    grid-area: logo;
+}
