@@ -1,0 +1,22 @@
+*{
+    border: solid black 3px;
+    margin: 2px;
+}
+
+/* Penamaan Object di Htmls*/
+
+/* Direct from tag */
+h1{
+    color: red;
+    text-align: center;
+}
+
+/* Access by class */
+.barang{
+    color: blue;
+}
+
+/* Access by id */
+#wajib{
+    background-color: red;
+}

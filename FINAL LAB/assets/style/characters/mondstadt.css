@@ -1,0 +1,35 @@
+@keyframes shiftRightLeft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#content{
+    background-image: url(../../img/characters/mondstadt/day-background.jpg);
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

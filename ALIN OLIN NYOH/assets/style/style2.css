@@ -1,0 +1,43 @@
+h1{
+    border: solid yellow 3px;
+    /* display: inline; */
+}
+
+a{
+    /* display: block; */
+    border: solid yellow 3px;
+}
+
+#container{
+    margin: 50px;
+    background-color: yellow;
+    width: 50%;
+    height: 50%;
+    border: solid black 3px;
+
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container *{
+    border: solid green 2px;;
+}
+
+#item-1{
+    
+    /* display: inline; */
+}
+
+#item-2{
+    /* display: inline; */
+}
+
+#item-3{
+    /* display: inline; */
+}
+
+#item-4{
+
+}

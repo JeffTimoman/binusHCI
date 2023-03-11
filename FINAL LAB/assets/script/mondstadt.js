@@ -1,0 +1,1 @@
+document.getElementById("content").style.backgroundImage = 'url("../../img/characters/mondstadt/night-background.jpg")'

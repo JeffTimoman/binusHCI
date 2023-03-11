@@ -39,7 +39,7 @@ body{
     align-items: center;
     justify-content: center;
     width : 100vw;
-    height: 33rem;  
+    height: 100vh;  
     background-color: black;
     color: white;
 }
@@ -78,7 +78,7 @@ body{
 
 .footerItem p{
     text-align: center;
-    font-size: .6rem;
+    font-size: clamp(.1 rem, 1vw + .1rem,.6rem);
     margin: .09rem;
     /* add .5rem of space for evvery word */
     letter-spacing: .03rem;
@@ -96,5 +96,20 @@ body{
     width: auto;
 }
 
+#footerHid{
+    display: none;
+}
+
 /* End of footer */
 
+@media (max-width: 361px){
+    .footerItem{
+        display: none;
+    }
+
+    #footerHid{
+        display: block;
+        width: 100%;
+        object-fit: scale-down;
+    }
+}
