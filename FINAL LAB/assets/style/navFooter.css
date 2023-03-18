@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 body{
     /* font-size: 12px; */
     margin: 0;
@@ -18,6 +27,7 @@ body{
 
 #navBar{
     position: fixed;
+    z-index: 1;
     top: 0;
     display: flex;
     align-items: center;
@@ -26,6 +36,239 @@ body{
     height: 4.3rem;
     padding: .3em 0 .3rem 0;
     background: rgba(48, 47, 41, 0.6);
+}
+
+.navBarItem{
+    height: 100%;
+}
+
+.navBarLogo{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.navBarContent{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    margin-left: 10%;
+    gap: 20px;
+
+}
+.navBarClick{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+
+    position: relative;
+    padding: 2.2% 0;
+}
+
+.ml-5{
+    margin-left: 5%;
+}
+
+.mr-5{
+    margin-right: 5%;
+}
+
+.navBarClick a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(1vh + .75rem);
+    line-height: 20px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    
+    margin: 0 1vh 0 1vh;
+}
+
+.navBarClick a img{
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.navBarLogo img{
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.navBarSignUp{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#navBarDropDown{
+    position: relative;
+    padding: 2.2% 0; 
+}
+
+#navBarDropDown::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 48%;
+    right: -15%;
+    border-left: 7px solid transparent;
+    border-right:7px solid transparent;
+    border-top: 7px solid #e8e8e8;
+    clear: both;
+}
+
+.navBarContent > .navBarClick:hover > a{
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+
+#dropDownMenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding-bottom: 2%;
+}
+#dropDownMenu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(1vh + .75rem);
+    line-height: 20px;
+
+    width: calc(10vw + 1.5rem);
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#dropDownMenu ul li{
+    padding: 1rem 0 1rem 0;
+    margin-left: 1rem;
+    background-color: rgba(48, 47, 41, 0.9);
+}
+
+#dropDownMenu ul li:hover{
+    background-color: rgba(48, 47, 41, 0.8);
+}
+
+#navBarDropDown:hover #dropDownMenu{
+    display: block;
+}
+
+.navBarLogo  a::before{    
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4%;
+    right: 100%;
+    width: 0%;
+    height: 5%;
+    background-color: rgb(105, 224, 255);
+    transition: 0.2s ease-in;
+    /* rgb(105, 224, 255) */
+}
+
+.navBarLogo .navBarClick:hover a::before{
+    display: flex;
+    right: 0;
+    transition: 0.3 ease-in;
+    width: 100%;
+}
+
+#dropDownMenu ul li a::before{
+    content: "";
+    display:none;
+}
+
+
+.hamburgerIcon{
+    display: none;    
+}
+
+.hamburgerIcon svg{
+    color: white;
+    margin-right: 10px;
+}
+
+.close , .open{
+    display: none;
+}
+
+.navBarSide{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 200px;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.75); 
+    right: -400px;
+    display: none;
+    align-items: flex-end;
+    flex-direction: column;
+    transition: 0.3s ease;
+    justify-content: space-around;
+}
+
+.navBarSide.active{
+    right: 0;
+}
+
+.navBarSideItem a{
+    color: white;
+    text-decoration: none;
+    font: 'Tahoma';
+    font-size: calc(1vh + .75rem);
+    padding-right: 20px;
+}
+
+/* @media screen  and (max-width: 700px) {
+    .navBarSignUp{
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 700px){
+    .navBarSignUp{
+        display: none;
+    }
+    .navBarContent{
+        display: none;
+    }
+
+    .navBar{
+        justify-content: space-between;
+    }
+
+    .hamburgerIcon{
+        display: block;
+    }
+
+    .open{
+        display: block;   
+    }
+    .open.active{
+        display: none;   
+    }
+    .close{
+        display: none;   
+    }
+    .close.active{
+        display: block;   
+    }
+    .navBarSide{
+        display: flex;
+    }
 }
 
 /* Note Logo size : 10 rem 4.3rem*/
@@ -39,7 +282,7 @@ body{
     align-items: center;
     justify-content: center;
     width : 100vw;
-    height: 100vh;  
+    height: 70vh;  
     background-color: black;
     color: white;
 }
@@ -102,7 +345,7 @@ body{
 
 /* End of footer */
 
-@media (max-width: 361px){
+@media (max-width: 370px){
     .footerItem{
         display: none;
     }

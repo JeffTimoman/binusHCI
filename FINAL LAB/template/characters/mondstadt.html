@@ -6,8 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mondstadt</title>
     <link rel="stylesheet" href="../../assets/style/characters/mondstadt.css">
+    <link rel="stylesheet" href="../../assets/style/navFooter.css">
 </head>
 <body>
+
+    <div class="container">
+        <div id="navBar">
+            <div class="navBarItem ml-5">
+                <div class="navBarLogo">
+                    <img src="../../assets/img/logo-white-no-bg.png" alt="">
+                    <div class="navBarContent">
+                        <div class="navBarClick"><a href="../home.html">Home</a></div>
+                        <div class="navBarClick"><a href="#">Characters</a></div>
+                        <div id="navBarDropDown" class="navBarClick">
+                            <a href="#">Explore</a>
+                            <div id="dropDownMenu">
+                                <ul>
+                                    <li><a href="">Maps</a></li>
+                                    <li><a href="">About Game</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navBarItem mr-5">
+                <div class="navBarSignUp">
+                    <div class="navBarClick"><a href="">Register</a><img src="../../assets/img/register.png" alt=""></div>
+                </div>
+            </div>
+            <div class="hamburgerIcon">
+                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+            </div>
+            <div class="navBarSide">
+
+                <div class="navBarSideItem"><a href="">Home</a></div>
+                <div class="navBarSideItem"><a href="">Characters</a></div>
+                <div class="navBarSideItem"><a href="">Maps</a></div>
+                <div class="navBarSideItem"><a href="">About Game</a></div>
+                <div class="navBarSideItem"><a href="">Register</a></div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div id="content">
             <div class="charVision">
@@ -22,41 +68,69 @@
             <div class="charName">
                 <h1 id="charName">JEAN</h1>
             </div>
+            <div class="charDesc">
+                <p id="charDesc">As the Acting Grand Master of the Knights, Jean has always 
+                    been devoted to her duties and maintaining peace in 
+                    Mondstadt.</p>
+            </div>
             <div class="clickMenu">
                 <div class="charOption p-active">
                     <div class="sliderWrapper">
                         
                         <img class="sliderBorder" src="../../assets/img/characters/slider-active.png" alt="">
                         <img class="sliderImg" src="../../assets/img/characters/mondstadt/small-1.png" alt="">
+                        <p class="">Jean</p>
                     </div>
-                    <p class="">Jean</p>
                 </div>
                 <div class="charOption">
                     <div class="sliderWrapper">
                         <img class="sliderBorder" src="../../assets/img/characters/slider-inactive.png" alt="">
                         <img class="sliderImg" src="../../assets/img/characters/mondstadt/small-2.png" alt="">
+                        <p class="">Lisa</p>
                     </div>
-                    <p class="">Lisa</p>
                 </div>
                 <div class="charOption">
                     <div class="sliderWrapper">
                         <img class="sliderBorder" src="../../assets/img/characters/slider-inactive.png" alt="">
                         <img class="sliderImg" src="../../assets/img/characters/mondstadt/small-3.png" alt="">
+                        <p>Venti</p>
                     </div>
-                    <p>Venti</p>
                 </div>
                 <div class="charOption">
                     <div class="sliderWrapper">
 
                         <img class="sliderBorder" src="../../assets/img/characters/slider-inactive.png" alt="">
                         <img class="sliderImg" src="../../assets/img/characters/mondstadt/small-4.png" alt="">    
+                        <p>Klee</p>
                     </div>
-                    <p>Klee</p>
                 </div>
             </div>
+            <div class="nextPage">
+                <a href="">
+                    <img class="pageBefore" src="../../assets/img/characters/next-page.png" alt="">
+                </a>
+                <h1>Mondstadt</h1>
+                <a href="">
+                    <img class="pageAfter" src="../../assets/img/characters/next-page.png" alt="">
+                </a>
+            </div>
+            <ul class="sideBar">
+                <li class="sideBarItem sideBarItem--active">
+                    <a href="">Mondstadt</a>
+                </li>
+                <li class="sideBarItem">
+                    <a href="">Liyue</a>
+                </li>
+                <li class="sideBarItem">
+                    <a href="">Inazuma</a>
+                </li>
+                <li class="sideBarItem">
+                    <a href="">Sumeru</a>
+                </li>
+            </ul>
         </div>
     </div>
-    
+    <script src="../../assets/script/navFooter.js"></script>
     <script src="../../assets/script/mondstadt.js"></script>
 </body>
 </html>

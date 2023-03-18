@@ -6,6 +6,10 @@
         opacity: 1;
     }
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
 body{
     margin: 0;
     /* overflow-x: hidden; */
@@ -72,7 +76,30 @@ body{
     width: 100%;
     height: 5%;
     background-color: #E3BC8C;
+}
 
+.charDesc{
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    width: 30%;
+    height: 20%;
+    padding: 0 1% 0 1%;
+    /* border: red solid 3px; */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.charDesc p{
+    color: white;
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vh;
+    line-height: 30px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.4);
 }
 
 .charVision{
@@ -118,25 +145,15 @@ body{
     position: relative;
     height: 85%;
     width: 100%;
+    overflow: hidden;
     /* border: yellow solid 3px; */
 }
 
-.charOption{
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100px;
-    margin: 0 1% 0 1%;
-    height: 100%;
-    /* background-color: red; */
-    color: white;
-}
 
 .sliderBorder{
     width: 100%;
     height: 100%;
     position: absolute;
-    object-fit: scale-down;
 }
 
 .sliderImg{
@@ -148,23 +165,172 @@ body{
     transform: translate(-50%, -68%);
     width: 95%;
     height: 72%;
-    object-fit: scale-down;
+    object-fit: cover;
     position: absolute;
+}
+.charOption{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    margin: 0 1% 0 1%;
+    height: 100%;
+    /* background-color: red; */
+    color: white;
 }
 
 .p-active{
     color: black;
 }
 
-.charOption > p{
+.charOption p{
     /* margin-bottom: auto; */
+    padding: 0; 
+    margin: 0;
     font-size: 2.7vh;
     position: absolute;
-    bottom: 0;
+    /* align-self: last baseline; */
+    bottom:5%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
 }
 
 .charOption:hover p{
     color: black;
+}
+
+.sideBar{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 187px;
+}
+
+.sideBar::before{
+    position: absolute;
+    top: 0;
+    left: 37px;
+    content: "";
+    width: 2px;
+    height: 1280px;
+    background-color: rgba(255,255,255,0.14);
+}
+
+.sideBarItem{
+    /* position: absolute; */
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding-left: 56px;
+    /* cursor: pointer; */
+    background: 18px center no-repeat;
+    background-image: url(../../img/characters/unclicked.png);
+    user-select: none;
+    list-style-type: none;  
+}
+
+.sideBarItem a{
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Tahoma';
+    text-decoration: none;
+}
+
+.sideBarItem--active{
+    text-shadow: none;
+    padding-left: 70px;
+    background: left center no-repeat;
+    background-image: url(../../img/characters/clicked.png);
+    background-size: contain;
+}
+
+.nextPage{
+    position: absolute;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nextPage h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma';
+    letter-spacing: 1px;
+    color: white;
+    font-size: 2vh;
+}
+
+.nextPage > a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nextPage img{
+    height: 70%;
+    object-fit: scale-down;
+}
+
+.pageBefore{
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 900px) {
+    .nextPage{
+        display: flex;
+    }
+    .clickMenu{
+        height: 18%;
+        bottom: 5%;
+    }
+    .charDesc{
+        display: none;
+    }
+    .sideBar{
+        display: none;
+    }
+
+    .charName{
+        top: 25%;
+        left: 10%;
+    }
+
+    .charVision{
+        top: 20%;
+        left: 0%;
+    }
+
+    .char{
+        position: absolute;
+        top: 0rem;
+        right: -0.5rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .char img{
+        top: 0;
+        right: -0.5rem;
+        width: 127%;
+        object-fit: scale-down;
+    }
+
 }
