@@ -1,4 +1,20 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -475,6 +491,180 @@
     .jb3-hid{
         display: flex;
     }
+}
+
+
+.maps{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.maps span{
+    display: none;
+    transition: display 0.5s ease;
+}
+
+.maps:hover span{
+    display: block;
+    transition: display 0.5s ease;
+}
+
+.mondstadt{
+    width: 100%;
+    height: 20vh;
+    border: solid white 3px;
+    background-image: url(../img/home/maps-preview/mondstat-before.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+
+    position: relative;
+}
+
+.mondstadt:hover{
+    background-image: url(../img/home/maps-preview/mondstat-after.png);
+    transition: all 0.5s ease-in-out;
+}
+
+.mondstadt::after{
+    content: '';
+    background-image: url(../img/home/maps-preview/jean.png);
+    position: absolute;
+    height: 20vh;
+    width: 20%;
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 10%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mondstadt:hover::after{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.liyue{
+    width: 100%;
+    height: 20vh;
+    border: solid white 3px;
+    background-image: url(../img/home/maps-preview/liyue-before.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.liyue:hover{
+    background-image: url(../img/home/maps-preview/liyue-after.png);
+    transition: all 0.5s ease-in-out;
+}
+
+.liyue::after{
+    content: '';
+    background-image: url(../img/home/maps-preview/xiao.png);
+    position: absolute;
+    height: 20vh;
+    width: 20%;
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 10%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.liyue:hover::after{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.inazuma{
+    width: 100%;
+    height: 20vh;
+    border: solid white 3px;
+    background-image: url(../img/home/maps-preview/inazuma-before.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.inazuma:hover{
+    background-image: url(../img/home/maps-preview/inazuma-after.png);
+    transition: all 0.5s ease-in-out;
+}
+
+.inazuma::after{
+    content: '';
+    background-image: url(../img/home/maps-preview/ayaka.png);
+    position: absolute;
+    height: 20vh;
+    width: 20%;
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 10%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.inazuma:hover::after{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.sumeru{
+    width: 100%;
+    height: 20vh;
+    border: solid white 3px;
+    background-image: url(../img/home/maps-preview/sumeru-before.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.sumeru:hover{
+    background-image: url(../img/home/maps-preview/sumeru-after.png);
+    transition: all 0.5s ease-in-out;
+}
+
+.sumeru::after{
+    content: '';
+    background-image: url(../img/home/maps-preview/tighnari.png);
+    position: absolute;
+    height: 20vh;
+    width: 20%;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 10%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.sumeru:hover::after{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.maps-preview a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
 }
 
 /*     font-size: clamp(1rem, 5vh + 1rem, 20%); */

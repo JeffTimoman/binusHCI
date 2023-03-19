@@ -127,11 +127,15 @@ body{
     text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
 }
 
+.disabled{
+    pointer-events: none;
+}
 
 #dropDownMenu{
     display: none;
     position: absolute;
-    top: 100%;
+    left: -10%;
+    top: 96%;
     padding-bottom: 2%;
 }
 #dropDownMenu ul{
@@ -211,7 +215,6 @@ body{
     top: 100%;
     width: 200px;
     height: 40vh;
-    background-color: rgba(0, 0, 0, 0.75); 
     right: -400px;
     display: none;
     align-items: flex-end;
@@ -224,14 +227,44 @@ body{
     right: 0;
 }
 
+.navBarSideItem{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+}
+
 .navBarSideItem a{
     color: white;
     text-decoration: none;
     font: 'Tahoma';
     font-size: calc(1vh + .75rem);
     padding-right: 20px;
+    position: relative;
 }
 
+.navBarSideItem::after{
+    content: '';
+    position: absolute;
+    height: 5%;
+    bottom: 0;
+    right: -500px;
+    width: 100%;
+    background-color: rgb(105, 224, 255);
+    transition: 0.7s ease;
+}
+
+.navBarSideItem:hover::after{
+    right: 0;
+    transition: 0.5s ease;
+}
+
+.navBarSideItem:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
 /* @media screen  and (max-width: 700px) {
     .navBarSignUp{
         display: none;
@@ -271,88 +304,85 @@ body{
     }
 }
 
-/* Note Logo size : 10 rem 4.3rem*/
-
-/* End of Navbar */
-
-/* Footer code */
-#footer{
+footer{
+    height: 65vh;
+    width: 100vw;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width : 100vw;
-    height: 70vh;  
-    background-color: black;
-    color: white;
+    justify-content: space-around;
 }
 
-.footerItem{
-    display: block;
+.footerLogo{
+    width: 20%;
+    height: 15%;
+    position: relative;
+    background-image: url(../img/logo-white-no-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#footerLogo{
-    width: 10rem;
-    height: 4.3rem;
-}
-#footerTeen{
-    width: 7.86rem;
-    height: 5rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-.footerItem ul{
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     display: flex;
     flex-direction: row;
-    list-style-type: none;
-    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    transition: "color 0.5s ease";
 }
 
-.footerItem ul li{
-    font-size : 1rem;
-    margin: 0 1rem 0 1rem;
-    color : rgba(140, 140, 140, 1);
+footer ul li{
+    color: rgb(190, 190, 190);
+    font-family: 'Poppins';
+    transition: color 0.5s ease;
+    font-size: 2vh;
 }
 
-.footerItem ul li:hover{
+footer ul li:hover{
     color: white;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.5s ease;
 }
 
-.footerItem p{
+footer .teen{
+    height: 25%;
+    width: 30%;
+    background-image: url(../img/teen-ersb.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .text{
+    height: 15%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
     text-align: center;
-    font-size: clamp(.1 rem, 1vw + .1rem,.6rem);
-    margin: .09rem;
-    /* add .5rem of space for evvery word */
-    letter-spacing: .03rem;
-    color: rgba(140, 140, 140, 1);
+    font-size: calc(1vh);
+    font-family: 'Tahoma';
 }
 
-.footerLast{
-    font-size: 0.75rem;
+footer .hoyo{
+    height: 10%;
+    width: 30%;
+    background-image: url(../img/hoyoverse-logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* 200 x 36 */
-#footerHoyo{
-    margin-top: .6rem;
-    height: 3.1rem;
-    width: auto;
+footer p{
+    color: white;
+    font-size: 2vh;
 }
+/* End of Navbar */
 
-#footerHid{
-    display: none;
-}
-
-/* End of footer */
-
-@media (max-width: 370px){
-    .footerItem{
-        display: none;
-    }
-
-    #footerHid{
-        display: block;
-        width: 100%;
-        object-fit: scale-down;
-    }
-}
+/* Footer code */

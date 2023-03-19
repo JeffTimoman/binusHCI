@@ -9,7 +9,49 @@
     <title>Home</title>
 </head>
 <body>  
-    
+    <div class="container">
+        <div id="navBar">
+            <div class="navBarItem ml-5">
+                <div class="navBarLogo">
+                    <img src="../assets/img/logo-white-no-bg.png" alt="">
+                    <div class="navBarContent">
+                        <div class="navBarClick"><a href="home.html">Home</a></div>
+                        <div class="navBarClick"><a href="characters/mondstadt.html">Characters</a></div>
+                        <div id="navBarDropDown" class="navBarClick">
+                            <a href="#" class="disabled">Explore</a>
+                            <div id="dropDownMenu">
+                                <ul>
+                                    <li><a href="maps.html">Maps</a></li>
+                                    <li><a href="about.html">About Game</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navBarItem mr-5">
+                <div class="navBarSignUp">
+                    <div class="navBarClick"><a href="register.html">Register</a><img src="../assets/img/register.png" alt=""></div>
+                </div>
+            </div>
+            <div class="hamburgerIcon">
+                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+            </div>
+            <div class="navBarSide">
+
+                <div class="navBarSideItem"><a href="home.html">Home</a></div>
+                <div class="navBarSideItem"><a href="characters/mondstadt.html">Characters</a></div>
+                <div class="navBarSideItem"><a href="maps.html">Maps</a></div>
+                <div class="navBarSideItem"><a href="about.html">About Game</a></div>
+                <div class="navBarSideItem"><a href="register.html">Register</a></div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="jumbotron-1">
             <h1>
@@ -84,46 +126,34 @@
         </div>
     </div>
 
+    <div class="container maps-preview">
+        <a href="#"><div class="mondstadt maps"><span>Mondstadt</span></div></a>
+        <a href="#"><div class="liyue maps"><span>Liyue</span></div></a>
+        <a href="#"><div class="inazuma maps"><span>Inazuma</span></div></a>
+        <a href="#"><div class="sumeru maps"><span>Sumeru</span>
+        </div></a>
+    </div>
+
     <footer>
-        <div class="container">
-            <div id="footer">
-                <img id="footerHid" src="../assets/img/logo-white-no-bg.png" alt="">
-                <div class="footerItem">
-
-                    <img id="footerLogo" src="../assets/img/logo-white-no-bg.png" alt="">
-                </div>
-                <div class="footerItem">
-                    <ul>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-
-                <div class="footerItem">
-                    <img id="footerTeen"src="../assets/img/teen-ersb.png" alt="">
-                </div>
-
-                <div class="footerItem">
-                    <p>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.</p>
-                        
-                    <p>
-                        Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their
-                    </p>
-
-                    <p> respective owners.</p>
-                </div>
-                <div class="footerItem">
-                    <img id="footerHoyo"src="../assets/img/hoyoverse-logo.png" alt="">
-                </div>
-                <div class="footerItem footerLast">
-                    Copyright © COGNOSPHERE. All Rights Reserved
-                </div>
-            </div>
+        <div class="footerLogo"></div>
+        <div class="terms">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>About us</li>
+                <li>Contact Us</li>
+            </ul>
         </div>
-    </footer>
+        <div class="teen"></div>
+        <div class="text">
+            "PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.<br>
+            Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered <br>trademarks of Epic Games. All other trademarks are the property of their respective owners.
+        </div>
+        <div class="hoyo">
 
+        </div>
+        <p>Copyright © COGNOSPHERE. All Rights Reserved.</p>
+    </footer>
     <script src="../assets/script/navFooter.js"></script>
     
 </body>
