@@ -39,9 +39,8 @@ carouselSlide.addEventListener('transitionend', () => {
 
 setInterval(() => {
     nextBtn.click();
-}, 7000);
+}, 8000);
 
-// detect when windows resize
 window.addEventListener('resize', () => {
     size = carouselSlide.clientWidth;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
