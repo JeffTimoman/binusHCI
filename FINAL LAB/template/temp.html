@@ -1,34 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="temp.css">
+  <title>Carousel</title>
 </head>
 <body>
-  <div class="content">
-    <div class="carousel">
-      <div class="carousel-content">
-        <div class="carousel-item active">
-          <img src="../assets/img/about/videos-1.jpeg" alt="Slide 1">
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/img/about/videos-1.jpeg" alt="Slide 2">
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/img/about/videos-1.jpeg" alt="Slide 3">
-        </div>
-        
-      </div>
-    </div>
-    <div class="carousel-nav">
-      <label for="radio1"></label>
-      <label for="radio2"></label>
-      <label for="radio3"></label>
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="../assets/img/about/photos-5.jpeg" id="lastClone" alt="">
+      <img src="../assets/img/about/photos-1.jpeg" alt="">
+      <img src="../assets/img/about/photos-2.jpeg" alt="">
+      <img src="../assets/img/about/photos-3.jpeg" alt="">
+      <img src="../assets/img/about/photos-4.jpeg" alt="">
+      <img src="../assets/img/about/photos-5.jpeg" alt="">
+      <img src="../assets/img/about/photos-1.jpeg" id="firstClone"alt="">
     </div>
   </div>
+  <button id="prevBtn">Prev</button>
+  <button id="nextBtn">Next</button>
+  <script src="temp.js"></script>
 </body>
 </html>
