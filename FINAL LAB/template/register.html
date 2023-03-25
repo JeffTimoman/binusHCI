@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterMenu</title>
+    <link rel="stylesheet" href="../assets/style/register.css">
+    <link rel="stylesheet" href="../assets/style/navFooter.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="navBar">
+            <div class="navBarItem ml-5">
+                <div class="navBarLogo">
+                    <img src="../assets/img/logo-white-no-bg.png" alt="">
+                    <div class="navBarContent">
+                        <div class="navBarClick"><a href="home.html">Home</a></div>
+                        <div class="navBarClick"><a href="characters/mondstadt.html">Characters</a></div>
+                        <div id="navBarDropDown" class="navBarClick">
+                            <a href="#" class="disabled">Explore</a>
+                            <div id="dropDownMenu">
+                                <ul>
+                                    <li><a href="maps.html">Maps</a></li>
+                                    <li><a href="about.html">About Game</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navBarItem mr-5">
+                <div class="navBarSignUp">
+                    <div class="navBarClick"><a href="register.html">Register</a><img src="../assets/img/register.png" alt=""></div>
+                </div>
+            </div>
+            <div class="hamburgerIcon">
+                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+            </div>
+            <div class="navBarSide">
+
+                <div class="navBarSideItem"><a href="home.html">Home</a></div>
+                <div class="navBarSideItem"><a href="characters/mondstadt.html">Characters</a></div>
+                <div class="navBarSideItem"><a href="maps.html">Maps</a></div>
+                <div class="navBarSideItem"><a href="about.html">About Game</a></div>
+                <div class="navBarSideItem"><a href="register.html">Register</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="MainContent">
+        <div class="InsideWrapper">
+            <div class="LeftContent">
+                <img src="../assets/img/about/features-5.png"alt="">
+            </div>
+            <div class="RightContent">
+                <div class="form">
+                    <h2>Registration</h2>
+                    <div class="form-element">
+                        <label for="email">Username</label>
+                        <input type="text" id="username" placeholder="Username">
+                        <div class="ErrorMessage" id="nameError">&nbsp;</div>
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Your Email">
+                        <div class="ErrorMessage" id="emailError">&nbsp;</div>
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Your Password">
+                        <div class="ErrorMessage" id="passwordError">&nbsp;</div>
+                    </div>
+                    <div class="form-element">
+                        <label for="confirm password">Confirm Password</label>
+                        <input type="password" id="confirm" placeholder="Your Password">
+                        <div class="ErrorMessage" id="confirmError">&nbsp;</div>
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" id="user-agreement">
+                        <label for="user-agreement" id="user-agreement">I have read and agree
+                            to the Terms of Service & Privacy Policy</label>
+                        <div class="ErrorMessage" id="agreeError"></div>
+                    </div>
+                    <div class="form-element">
+                        <button id="sign-btn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerLogo"></div>
+        <div class="terms">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>About us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="teen"></div>
+        <div class="text">
+            "PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.<br>
+            Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered <br>trademarks of Epic Games. All other trademarks are the property of their respective owners.
+        </div>
+        <div class="hoyo">
+
+        </div>
+        <p>Copyright © COGNOSPHERE. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="../assets/script/register.js"></script>
+<script src="../assets/script/navFooter.js"></script>
+</html>

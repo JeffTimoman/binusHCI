@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Inter';
+}
+
+.RightContent{
+    width: 40%;
+}
+
+.MainContent{
+    background: url(../img/register/BackgroundImage.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.InsideWrapper{
+    height: 490px;
+    width: 1080px;
+    background: url(../img/register/InsideWrapper.png) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LeftContent img{
+    width: 400px;
+    height: auto;
+    transition: 0.3s ease;
+}
+
+.LeftContent:hover img{
+    translate: 0px -80px;
+    scale: 1.2;
+}
+
+.LeftContent{
+    margin-left: 40px;
+}
+
+.RightContent{
+    margin-right: 80px;
+}
+
+
+.form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    scale: 0.9;
+}
+
+#user-agreement{
+    font-size: 12px;
+    color: #999;
+}
+
+.form h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+.form .form-element{
+    padding: 2px 0px;
+    width: 300px;
+}
+
+
+.form .form-element label{
+    font-size: 14px;
+    color: #222;
+}
+
+.form .form-element input[type = "text"],
+.form .form-element input[type = "password"]{
+    margin-top: 2px;
+    width: 300px;
+    display: block;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222 ;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ .form .form-element a{
+    display: block;
+    margin-left: calc(80%);
+    font-size: 16px;
+    color: #1865a9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#sign-btn{
+    width: 120px;
+    transform: translateX(75%);
+}
+
+.ErrorMessage{
+    color: red;
+    font-size: 12px;
+    padding: 3px;
+}
+
+.LeftContent{
+    margin-left: 40px;
+}
+
+@media screen and (max-width:1100px) {
+    .InsideWrapper{
+        height: max-content;
+        scale: 0.8;
+        width: max-content;
+        flex-direction: column;
+        background: url(../img/register/InsideWrapper2.png) center/cover no-repeat;
+    }
+    .LeftContent{
+        margin-left: 0px;
+    }
+    .RightContent{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .InsideWrapper{
+        scale: 0.7;    
+    }
+}
+
+/* #emailError{
+    color: red;
+    font-size: 12px;
+    padding: 3px;
+}
+#passwordError{
+    color: red;
+    font-size: 12px;
+    padding: 3px;
+} */
