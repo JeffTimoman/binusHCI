@@ -33,13 +33,13 @@ body{
 }
 
 .LeftContent img{
-    width: 400px;
+    width: 600px;
     height: auto;
     transition: 0.3s ease;
 }
 
 .LeftContent:hover img{
-    translate: 0px -80px;
+    /* translate: 0px -80px; */
     scale: 1.2;
 }
 
@@ -49,6 +49,7 @@ body{
 
 .RightContent{
     margin-right: 80px;
+    scale: 0.85;
 }
 
 
@@ -85,6 +86,16 @@ body{
 
 .form .form-element input[type = "text"],
 .form .form-element input[type = "password"]{
+    margin-top: 2px;
+    width: 300px;
+    display: block;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.form .form-element input[type = "number"]{
     margin-top: 2px;
     width: 300px;
     display: block;
@@ -148,6 +159,9 @@ body{
 @media screen and (max-width:500px) {
     .InsideWrapper{
         scale: 0.7;    
+    }
+    .LeftContent img{
+        width: 400px;
     }
 }
 

@@ -3,12 +3,14 @@ const inputEmail = document.getElementById("email")
 const inputPassword = document.getElementById("password")
 const inputConfirm = document.getElementById("confirm")
 const inputAgreement = document.getElementById("user-agreement")
+const inputAge = document.getElementById('age')
 
 const nameError = document.getElementById("nameError")
 const emailError = document.getElementById("emailError")
 const passwordError = document.getElementById("passwordError")
 const confirmError = document.getElementById("confirmError")
 const agreeError = document.getElementById("agreeError")
+const ageError = document.getElementById("ageError")
 
 const buttonSubmit = document.getElementById("sign-btn")
 
@@ -50,7 +52,7 @@ buttonSubmit.addEventListener("click", (event)=>{
     var emailerrorText = ""
     var passerrorText = ""
     var confirmerrorText = ""
-    var agree = ""
+    var ageerrorText = ""
     //Validasi Username, minimal 8 karakter
     const name = inputUsername.value
     if(name.length < 8){
@@ -67,6 +69,18 @@ buttonSubmit.addEventListener("click", (event)=>{
     }
     else{
         emailerrorText="\n"
+    }
+
+    const ages = inputAge.value
+    // console.log(ages)
+    if(ages.length == 0){
+        ageerrorText = "Must be filled"
+    }
+    else if(ages < 13){
+        ageerrorText = "Age 13 or over to play!"
+    }
+    else{
+        ageerrorText="\n"
     }
 
     // Validasi Password, terdiri dari minimal 8 karakter
@@ -98,6 +112,7 @@ buttonSubmit.addEventListener("click", (event)=>{
     emailError.innerText = emailerrorText
     passwordError.innerText = passerrorText
     confirmError.innerText = confirmerrorText
+    ageError.innerText = ageerrorText
 
     if(nameError.innerText != ""){
         inputUsername.style.border = "1px red solid" ;
@@ -126,8 +141,15 @@ buttonSubmit.addEventListener("click", (event)=>{
     if(confirmError.innerText=="\n"){
         inputConfirm.style.border = "1px green solid" ;
     }
+    if(ageError.innerText != ""){
+        inputAge.style.border = "1px red solid" ;
+    }
+    if(ageError.innerText=="\n"){
+        inputAge.style.border = "1px green solid" ;
+    }
 
-    if ( nameerrorText=="" && emailerrorText == "" && passerrorText == "" && confirmerrorText=="" && Agreement) {
+
+    if ( nameerrorText=="" && emailerrorText == "" && passerrorText == "" && confirmerrorText=="" && Agreement && ageerrorText=="") {
         alert("Register Sucessfully!")
     }
 })

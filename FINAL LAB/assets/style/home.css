@@ -34,7 +34,7 @@
     width: 100vw;
     height: 100vh;
     background-position: center;
-    background-image: url(../img/home/jumbotron-1/home-jumbotron-img.jpg);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/home-jumbotron-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
@@ -138,7 +138,7 @@
     width: 100vw;
     height: 200vh;
     background-position: center;
-    background-image: url(../img/home/jumbotron-2/wallpaper-blur-gradient.png);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/wallpaper-blur-gradient.png");
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: inset 0px 0px 20px 30px rgba(0, 0, 0, 0.5);
@@ -408,7 +408,7 @@
 .jumbotron-3{
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/home/jumbotron-3/wallpaper.jpg);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/wallpaper.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -521,7 +521,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background-image: url(../img/home/maps-preview/mondstat-before.png);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/maps-preview/mondstat-before.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -531,7 +531,7 @@
 }
 
 .mondstadt:hover{
-    background-image: url(../img/home/maps-preview/mondstat-after.png);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/maps-preview/mondstat-after.png");
     transition: all 0.5s ease-in-out;
 }
 
@@ -565,7 +565,7 @@
     -webkit-box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-image: url(../img/home/maps-preview/liyue-before.png);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/maps-preview/liyue-before.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -574,7 +574,7 @@
 }
 
 .liyue:hover{
-    background-image: url(../img/home/maps-preview/liyue-after.png);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/maps-preview/liyue-after.png");
     transition: all 0.5s ease-in-out;
 }
 
@@ -607,7 +607,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background-image: url(../img/home/maps-preview/inazuma-before.png);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/maps-preview/inazuma-before.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -616,7 +616,7 @@
 }
 
 .inazuma:hover{
-    background-image: url(../img/home/maps-preview/inazuma-after.png);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/maps-preview/inazuma-after.png");
     transition: all 0.5s ease-in-out;
 }
 
@@ -649,7 +649,7 @@
     -webkit-box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-image: url(../img/home/maps-preview/sumeru-before.png);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/maps-preview/sumeru-before.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -658,7 +658,7 @@
 }
 
 .sumeru:hover{
-    background-image: url(../img/home/maps-preview/sumeru-after.png);
+    background-image: url("https://raw.githubusercontent.com/JeffTimoman/assetHci/main/maps-preview/sumeru-after.png");
     transition: all 0.5s ease-in-out;
 }
 
